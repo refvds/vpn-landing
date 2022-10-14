@@ -1,0 +1,49 @@
+@import 'global';
+
+.header {
+    &__container {
+        max-width: 1140px;
+        margin: 0 auto;
+        padding-top: 45px;
+        display: flex;
+        gap: 119px;
+    }
+    &__logo-block {
+        display: flex;
+        align-items: center;
+    }
+    &__logo {
+        display: block;
+        padding: 0;
+        margin-right: 10px;
+    }
+    &__label-name {
+        display: block;
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 24px;
+        color: #0B132A;
+        
+    }
+    &__list li{
+        display: inline-block;
+       
+        line-height: 19px;
+        &:not(:last-child) {
+            margin-right: 36px;
+        }
+        & a {
+            color: #4F5665;
+        }
+    }
+    &__signin-signup-block {
+        margin-left: 29px;
+    }
+    &__button:first-child {
+        font-weight: 500;
+        margin-right: 27px;
+    }
+    &__button:last-child {
+        padding: 13px 45px;
+    }
+}
