@@ -28,4 +28,13 @@ ul {
     &--rounded {
         border-radius: 50px;
     }
+    &--contained {
+        background-color: #F53838;;
+    }
+    &--brick {
+        border-radius: 10px;
+    }
+    &--shadow {
+        box-shadow: #F53838 0px 25px 20px -20px;
+    }
 }

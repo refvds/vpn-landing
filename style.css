@@ -333,6 +333,15 @@ ul {
 .button--rounded {
   border-radius: 50px;
 }
+.button--contained {
+  background-color: #F53838;
+}
+.button--brick {
+  border-radius: 10px;
+}
+.button--shadow {
+  box-shadow: #F53838 0px 25px 20px -20px;
+}
 
 .header__container {
   max-width: 1140px;
@@ -376,6 +385,41 @@ ul {
 }
 .header__button:last-child {
   padding: 13px 45px;
+}
+
+.about__container {
+  margin: 0 auto;
+  max-width: 1207px;
+  padding-top: 83px;
+  padding-left: 70px;
+}
+.about__block {
+  display: flex;
+}
+.about__info {
+  margin-top: -15px;
+  max-width: 555px;
+}
+.about__img {
+  padding-left: 40px;
+}
+.about__title {
+  font-weight: 500;
+  font-size: 50px;
+  line-height: 70px;
+  color: #0B132A;
+}
+.about__text {
+  margin-top: -20px;
+  line-height: 30px;
+  color: #4F5665;
+}
+.about__button {
+  margin-top: 34px;
+  padding: 17.5px 78.5px;
+  font-weight: 700;
+  line-height: 25px;
+  color: #FFFFFF;
 }
 
 /*# sourceMappingURL=style.css.map */
