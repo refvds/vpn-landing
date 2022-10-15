@@ -83,4 +83,42 @@
         line-height: 25px;
         color: #FFFFFF;
     }
+    &__numbers-block {
+        margin-top: 128px;
+        padding-bottom: 10px;
+        display: flex;
+        box-shadow: 0 40px 40px 1px rgb(13 16 37 / 6%);
+    }
+    &__number-block {
+        display: flex;
+        align-items: center;
+        padding-left: 88px;
+        padding-top: 38px;
+        padding-right: 130px;
+        padding-bottom: 27px;
+        &:nth-child(2) {
+            padding-left: 114px;
+        }
+        &:nth-child(3) {
+            padding-left: 93px;
+        }
+        &:not(:last-child) {
+            border-right: 2px solid #EEEFF2;
+        }
+    }
+    &__number-digits {
+        margin: 0;
+        font-weight: 700;
+        font-size: 25px;
+        line-height: 30px;
+        color: #0B132A;
+    }
+    &__number-title {
+        font-size: 20px;
+        line-height: 30px;
+        color: #4F5665;
+    }
+    &__number-info {
+        margin-left: 36.5px;
+    }
 }
