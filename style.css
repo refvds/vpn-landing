@@ -463,7 +463,7 @@ ul {
 
 .features {
   padding-top: 130px;
-  padding-bottom: 131px;
+  padding-bottom: 109px;
 }
 .features__container {
   margin: 0 auto;
@@ -505,7 +505,8 @@ ul {
 }
 
 .price {
-  margin-top: 59px;
+  padding-top: 81px;
+  background: linear-gradient(180deg, #F8F8F8 -45.04%, rgba(248, 248, 248, 0) 88.56%);
 }
 .price__container {
   max-width: 1090px;
