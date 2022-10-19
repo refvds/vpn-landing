@@ -300,6 +300,7 @@
 
 .testimonials {
     margin-top: 41px;
+    position: relative;
     &__container {
         max-width: 1354px;
         margin: 0 auto;
@@ -412,5 +413,39 @@
         margin-right: 20px;
         position: relative;
 
+    }
+}
+
+.subscribe-block {
+    position: absolute;
+    padding: 46px 70px;
+    border-radius: 10px;
+    width: 1001px;
+    height: 135px;
+    top: 657px;
+    left: 381px;
+    box-shadow: -2px 11px 43px 0px rgb(34 60 80 / 20%);
+    display: flex;
+    align-items: center;
+    &__title {
+        margin: 0;
+        max-width: 372px;
+        font-weight: 500;
+        font-size: 35px;
+        line-height: 45px;
+        align-items: center;
+        color: #0B132A;
+    }
+    &__text {
+        display: inline-block;
+        margin-top: 20px;
+        line-height: 30px;
+        align-items: center;
+        color: #4F5665;
+    }
+    &__button {
+        display: block;
+        margin-left: auto;
+        padding: 17.5px 65px;
     }
 }

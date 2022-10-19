@@ -638,6 +638,7 @@ ul {
 
 .testimonials {
   margin-top: 41px;
+  position: relative;
 }
 .testimonials__container {
   max-width: 1354px;
@@ -748,6 +749,40 @@ ul {
 .testimonials__button-left {
   margin-right: 20px;
   position: relative;
+}
+
+.subscribe-block {
+  position: absolute;
+  padding: 46px 70px;
+  border-radius: 10px;
+  width: 1001px;
+  height: 135px;
+  top: 657px;
+  left: 381px;
+  box-shadow: -2px 11px 43px 0px rgba(34, 60, 80, 0.2);
+  display: flex;
+  align-items: center;
+}
+.subscribe-block__title {
+  margin: 0;
+  max-width: 372px;
+  font-weight: 500;
+  font-size: 35px;
+  line-height: 45px;
+  align-items: center;
+  color: #0B132A;
+}
+.subscribe-block__text {
+  display: inline-block;
+  margin-top: 20px;
+  line-height: 30px;
+  align-items: center;
+  color: #4F5665;
+}
+.subscribe-block__button {
+  display: block;
+  margin-left: auto;
+  padding: 17.5px 65px;
 }
 
 /*# sourceMappingURL=style.css.map */
