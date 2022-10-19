@@ -1,0 +1,41 @@
+@import 'normalize';
+@import 'fonts';
+@import 'variables';
+
+
+body {
+    font-family: 'Rubik', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+}
+
+a {
+    text-decoration: none;
+  
+}
+
+ul {
+    list-style-type: none;
+}
+
+.button {
+    text-decoration: none;
+    display: inline-block;
+    &--outlined {
+        border: 1px solid #F53855;
+        color: #F53855;
+    }
+    &--rounded {
+        border-radius: 50px;
+    }
+    &--contained {
+        background-color: #F53838;
+        color: white;
+    }
+    &--brick {
+        border-radius: 10px;
+    }
+    &--shadow {
+        box-shadow: #F53838 0px 25px 20px -20px;
+    }
+}
