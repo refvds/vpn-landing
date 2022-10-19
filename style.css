@@ -636,4 +636,118 @@ ul {
   margin-right: 60px;
 }
 
+.testimonials {
+  margin-top: 41px;
+}
+.testimonials__container {
+  max-width: 1354px;
+  margin: 0 auto;
+}
+.testimonials__title {
+  margin: 0;
+  margin-left: 487px;
+  font-weight: 500;
+  font-size: 35px;
+  line-height: 50px;
+  text-align: center;
+  color: #0B132A;
+  max-width: 448px;
+}
+.testimonials__text {
+  margin: 0;
+  padding-top: 20px;
+  line-height: 30px;
+  text-align: center;
+  color: #4F5665;
+  max-width: 555px;
+  margin-left: 435px;
+}
+.testimonials__cards {
+  margin-top: 61px;
+}
+.testimonials__cards-container {
+  display: flex;
+  gap: 39px;
+  justify-content: space-between;
+  padding-left: 53px;
+}
+.testimonials__card {
+  width: 336px;
+  height: 166px;
+  padding: 30px;
+  border: 2px solid #DDDDDD;
+  border-radius: 10px;
+}
+.testimonials__card--active {
+  border: 2px solid #F53838;
+}
+.testimonials__card-top {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.testimonials__card-score-block {
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.testimonials__card-score {
+  line-height: 30px;
+  color: #0B132A;
+}
+.testimonials__card-user-name {
+  margin: 0;
+  font-weight: 500;
+  font-size: 18px;
+  color: #0B132A;
+  text-align: center;
+}
+.testimonials__card-user-location {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 30px;
+  text-align: center;
+  color: #4F5665;
+}
+.testimonials__card-testimonial {
+  line-height: 30px;
+  color: #0B132A;
+  margin: 0;
+}
+.testimonials__card-dot {
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  background: #DDE0E4;
+  border-radius: 50%;
+}
+.testimonials__card-dot:not(:last-child) {
+  margin-right: 12px;
+}
+.testimonials__card-dot--active {
+  width: 45px;
+  background: #F53838;
+  border-radius: 50px;
+}
+.testimonials__card-bottom {
+  margin-top: 62px;
+  padding-left: 53px;
+  display: flex;
+  align-items: center;
+}
+.testimonials__cards-buttons {
+  margin-left: 865px;
+}
+.testimonials__button-left, .testimonials__button-right {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  border: 2px solid #F53838;
+}
+.testimonials__button-left {
+  margin-right: 20px;
+  position: relative;
+}
+
 /*# sourceMappingURL=style.css.map */
