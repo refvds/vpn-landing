@@ -336,12 +336,13 @@ ul {
 .button--contained {
   background-color: #F53838;
   color: white;
+  transition: 0.5s ease-in-out;
 }
 .button--brick {
   border-radius: 10px;
 }
 .button--shadow {
-  box-shadow: #F53838 0px 25px 20px -20px;
+  box-shadow: #F53838 0px 25px 20px -14px;
 }
 
 .slide-wrapper {
@@ -611,6 +612,7 @@ ul {
 }
 .price__card--active {
   border: 2px solid #F53838;
+  transition: 0.5s ease-in-out;
 }
 .price__card-img {
   margin-left: 63px;

@@ -209,6 +209,7 @@
         flex-direction: column;
         &--active {
             border: 2px solid #F53838;
+            transition: .5s ease-in-out;
         }
     }
     &__card-img {

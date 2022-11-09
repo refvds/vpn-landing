@@ -31,12 +31,13 @@ ul {
     &--contained {
         background-color: #F53838;
         color: white;
+        transition: .5s ease-in-out;
     }
     &--brick {
         border-radius: 10px;
     }
     &--shadow {
-        box-shadow: #F53838 0px 25px 20px -20px;
+        box-shadow: #F53838 0px 25px 20px -14px;
     }
 }
 
@@ -70,9 +71,6 @@ ul {
     background: #F53838;
     border-radius: 50px;
     transition: width .4s linear;
-    
-    
-
 }
 
 .slider-item__animation--r2l {
