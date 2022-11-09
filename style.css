@@ -565,9 +565,16 @@ ul {
   margin-left: -3px;
 }
 .features__list-item {
+  position: relative;
   font-size: 14px;
   line-height: 30px;
   color: #4F5665;
+}
+.features__list-item::before {
+  position: absolute;
+  content: url("assets/icons/check.svg");
+  top: 3px;
+  left: -35px;
 }
 .features__list-item:not(:last-child) {
   margin-bottom: 15px;
