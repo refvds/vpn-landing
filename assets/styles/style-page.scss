@@ -42,9 +42,15 @@
     &__button:first-child {
         font-weight: 500;
         margin-right: 27px;
+        cursor: pointer;
     }
     &__button:last-child {
+        cursor: pointer;
         padding: 13px 45px;
+        &:hover {
+            background-color:#F53838;
+            color: white;
+        }
     }
 }
 
