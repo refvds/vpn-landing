@@ -21,6 +21,7 @@ ul {
 .button {
     text-decoration: none;
     display: inline-block;
+    
     &--outlined {
         border: 1px solid #F53855;
         color: #F53855;
@@ -31,11 +32,46 @@ ul {
     &--contained {
         background-color: #F53838;
         color: white;
+        transition: .5s ease-in-out;
     }
     &--brick {
         border-radius: 10px;
     }
     &--shadow {
-        box-shadow: #F53838 0px 25px 20px -20px;
+        box-shadow: #F53838 0px 25px 20px -14px;
     }
+}
+.slider {
+    display: flex;
+    gap: 50px;
+    cursor: pointer;
+
+}
+.tns-nav {
+    margin-top: 83px;
+    display: flex;
+    gap: 12px;
+}
+
+.tns-nav button {
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    background: #DDE0E4;
+    border: none;
+    border-radius: 50%;
+    transition: all .4s ease-out;
+}
+
+.tns-nav .tns-nav-active {
+    width: 45px;
+    background: #F53838;
+    border-radius: 50px;
+    transition: width .4s ease-out;
+}
+
+.slider-controls {
+    position: absolute;
+    right: 130px;
+    bottom: -22px;
 }

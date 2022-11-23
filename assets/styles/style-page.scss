@@ -42,9 +42,15 @@
     &__button:first-child {
         font-weight: 500;
         margin-right: 27px;
+        cursor: pointer;
     }
     &__button:last-child {
+        cursor: pointer;
         padding: 13px 45px;
+        &:hover {
+            background-color:#F53838;
+            color: white;
+        }
     }
 }
 
@@ -157,9 +163,16 @@
         margin-left: -3px;
     }
     &__list-item {
+        position: relative;
         font-size: 14px;
         line-height: 30px;
         color: #4F5665;
+        &::before {
+            position: absolute;
+            content: url('assets/icons/check.svg');
+            top: 3px;
+            left: -35px;
+        }
         &:not(:last-child) {
             margin-bottom: 15px;   
         }
@@ -203,6 +216,7 @@
         flex-direction: column;
         &--active {
             border: 2px solid #F53838;
+            transition: .5s ease-in-out;
         }
     }
     &__card-img {
@@ -244,6 +258,12 @@
         text-align: center;
         color: #0B132A;
         margin: 0;
+        &--month {
+            font-weight: 400;
+            font-size: 25px;
+            line-height: 30px;
+            color: #4F5665;
+        }
     }
     &__card-button {
         margin-top: 14px;
@@ -325,7 +345,10 @@
         margin-left: 435px;
     }
     &__cards {
+        margin: 0 auto;
         margin-top: 61px;
+        max-width: 1300px;
+        position: relative;
     }
     &__cards-container  {
         display: flex;
@@ -334,13 +357,15 @@
         padding-left: 53px;
     }
     &__card {
-        width: 336px;
-        height: 166px;
+        width: 400px;
+        height: 231px;
         padding: 30px;
         border: 2px solid #DDDDDD;
         border-radius: 10px;
-        &--active {
+        user-select: none;
+        &:hover {
             border: 2px solid #F53838;
+            transition: all .4s ease-in-out;
         }
     }
     &__card-top {
@@ -404,20 +429,36 @@
     } 
     &__button-left,
     &__button-right {
+        background-color: white;
+        font-size: 31px;
         width: 60px;
         height: 60px;
         border-radius: 50%;
         border: 2px solid #F53838;
+        cursor: pointer;
+        &:hover {
+            & path {
+                fill: white;
+            }
+            background: #F53838;
+        }
     }
     &__button-left {
         margin-right: 20px;
         position: relative;
-
+       
+    }
+    &__button-right {
+        margin-right: 20px;
+        position: relative;
+        & svg {
+            transform: rotateY(180deg);
+        }
     }
 }
 
 .footer {
-    padding-top: 359px;
+    padding-top: 448px;
     &__container {
         max-width: 1140px;
         margin: 0 auto;
@@ -536,3 +577,4 @@
         line-height: 25px;
     }
 }
+
