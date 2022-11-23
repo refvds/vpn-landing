@@ -258,6 +258,12 @@
         text-align: center;
         color: #0B132A;
         margin: 0;
+        &--month {
+            font-weight: 400;
+            font-size: 25px;
+            line-height: 30px;
+            color: #4F5665;
+        }
     }
     &__card-button {
         margin-top: 14px;

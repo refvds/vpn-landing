@@ -634,6 +634,12 @@ ul {
   color: #0B132A;
   margin: 0;
 }
+.price__card-price--month {
+  font-weight: 400;
+  font-size: 25px;
+  line-height: 30px;
+  color: #4F5665;
+}
 .price__card-button {
   margin-top: 14px;
   padding: 13px 63px;
