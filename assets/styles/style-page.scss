@@ -339,7 +339,10 @@
         margin-left: 435px;
     }
     &__cards {
+        margin: 0 auto;
         margin-top: 61px;
+        max-width: 1300px;
+        position: relative;
     }
     &__cards-container  {
         display: flex;
@@ -348,13 +351,15 @@
         padding-left: 53px;
     }
     &__card {
-        width: 336px;
-        height: 166px;
+        width: 400px;
+        height: 231px;
         padding: 30px;
         border: 2px solid #DDDDDD;
         border-radius: 10px;
-        &--active {
+        user-select: none;
+        &:hover {
             border: 2px solid #F53838;
+            transition: all .4s ease-in-out;
         }
     }
     &__card-top {
@@ -418,15 +423,31 @@
     } 
     &__button-left,
     &__button-right {
+        background-color: white;
+        font-size: 31px;
         width: 60px;
         height: 60px;
         border-radius: 50%;
         border: 2px solid #F53838;
+        cursor: pointer;
+        &:hover {
+            & path {
+                fill: white;
+            }
+            background: #F53838;
+        }
     }
     &__button-left {
         margin-right: 20px;
         position: relative;
-
+       
+    }
+    &__button-right {
+        margin-right: 20px;
+        position: relative;
+        & svg {
+            transform: rotateY(180deg);
+        }
     }
 }
 
@@ -550,3 +571,4 @@
         line-height: 25px;
     }
 }
+
