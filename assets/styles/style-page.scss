@@ -2,16 +2,17 @@
 
 .header {
     &__container {
-        max-width: 1140px;
-        margin: 0 auto;
-        padding-top: 45px;
+        padding: 45px 10px 0 10px;
         display: flex;
-        gap: 119px;
+    }
+    &__nav {
+     margin-left: auto;
     }
     &__logo-block {
         display: flex;
         align-items: center;
     }
+    
     &__logo {
         display: block;
         padding: 0;
@@ -37,7 +38,7 @@
         }
     }
     &__signin-signup-block {
-        margin-left: 29px;
+        margin-left: auto;
     }
     &__button:first-child {
         font-weight: 500;
@@ -51,6 +52,9 @@
             background-color:#F53838;
             color: white;
         }
+    }
+    &__burger-menu {
+        display: none;
     }
 }
 
@@ -134,7 +138,7 @@
     padding-bottom: 109px;
     &__container {
         margin: 0 auto;
-        max-width: 1140px;
+        // max-width: 1140px;
         display: flex;
         justify-content: space-between;
     }
@@ -278,7 +282,7 @@
 .global-network {
     padding-top: 150px;
     &__container {
-        max-width: 1140px;
+        // max-width: 1140px;
         margin: 0 auto;
     }
     &__title {
@@ -460,7 +464,7 @@
 .footer {
     padding-top: 448px;
     &__container {
-        max-width: 1140px;
+        // max-width: 1140px;
         margin: 0 auto;
         display: flex;
     }
@@ -578,3 +582,54 @@
     }
 }
 
+@media screen and (min-width: 641px) and (max-width: 950px) {
+    .header {
+        &__logo {
+            margin-right: 0;
+        }
+        &__nav {
+            font-size: 12px;
+           
+        }
+        &__list li{
+            &:not(:last-child) {
+                margin-right: 12px;
+            }
+        }
+        &__signin-signup-block {
+            align-self: center;
+        }
+        &__button {
+            font-size: 12px;
+        }
+        &__button:first-child {
+            margin-right: 14px;
+        }
+        &__button:last-child {
+            padding: 3px 17px;
+        }
+    }
+
+}
+
+@media screen and  (max-width: 640px)   {
+    .header {
+        &__nav,
+        &__signin-signup-block {
+            display: none;
+        }
+        &__burger-menu {
+            display: block;
+            margin-left: auto;
+            align-self: center;
+            padding: 0 10px;
+            & div {
+                margin: 5px 0;
+                height: 2px;
+                width: 27px;
+                background:#F53838;
+            }
+        }
+        
+    }
+}
