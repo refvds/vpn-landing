@@ -538,6 +538,11 @@
     <script>
         const slider = tns({
             container: '.slider',
+            slideBy: 'page',
+            autoplay: true,
+            autoplayTimeout: 1500,
+            speed: 700,
+            preventScrollOnTouch: 'force',
             items: 3,
             mouseDrag: true,
             controlsContainer: '.slider-controls',

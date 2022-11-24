@@ -380,6 +380,10 @@ ul {
   bottom: -22px;
 }
 
+[data-action=stop] {
+  display: none;
+}
+
 .header__container {
   max-width: 1140px;
   margin: 0 auto;
