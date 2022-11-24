@@ -442,8 +442,54 @@ ul {
   background-color: #F53838;
   color: white;
 }
+.header__burger-menu__button-open {
+  display: none;
+}
+.header__burger-menu__button-open {
+  margin-left: auto;
+  align-self: center;
+  padding: 0 10px;
+  cursor: pointer;
+}
+.header__burger-menu__button-open div {
+  margin: 5px 0;
+  height: 2px;
+  width: 27px;
+  background: #F53838;
+}
 .header__burger-menu {
   display: none;
+}
+.header__burger-menu {
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #F53838;
+}
+.header__burger-menu__button-close {
+  position: absolute;
+  z-index: 5;
+  color: white;
+  top: 10px;
+  right: 20px;
+  font-size: 42px;
+}
+.header__burger-menu__nav {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 48px;
+  text-align: center;
+}
+.header__burger-menu__item {
+  margin-top: 27px;
+  padding-bottom: 7px;
+  border-bottom: 4px solid white;
 }
 
 .about__container {
@@ -960,6 +1006,9 @@ ul {
 }
 
 @media screen and (min-width: 641px) and (max-width: 950px) {
+  .header__burger-menu__button-open {
+    display: none;
+  }
   .header__logo {
     margin-right: 0;
   }
@@ -986,17 +1035,19 @@ ul {
   .header__nav, .header__signin-signup-block {
     display: none;
   }
-  .header__burger-menu {
+  .header__burger-menu__button-open {
     display: block;
-    margin-left: auto;
-    align-self: center;
-    padding: 0 10px;
   }
-  .header__burger-menu div {
-    margin: 5px 0;
-    height: 2px;
-    width: 27px;
-    background: #F53838;
+}
+@media screen and (max-width: 340px) {
+  .header__nav, .header__signin-signup-block {
+    display: none;
+  }
+  .header__burger-menu__button-open {
+    display: block;
+  }
+  .header__burger-menu__nav, .header__burger-menu__button-close {
+    font-size: 32px;
   }
 }
 

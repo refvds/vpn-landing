@@ -53,8 +53,55 @@
             color: white;
         }
     }
-    &__burger-menu {
+    &__burger-menu__button-open {
         display: none;
+    }
+    &__burger-menu__button-open {
+        margin-left: auto;
+        align-self: center;
+        padding: 0 10px;
+        cursor: pointer;
+        & div {
+            margin: 5px 0;
+            height: 2px;
+            width: 27px;
+            background:#F53838;
+        }
+    }
+    &__burger-menu{ 
+        display: none;
+    }
+    &__burger-menu{
+        position: absolute;
+        z-index: 1;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: #F53838;
+       
+    }
+    &__burger-menu__button-close {
+        position: absolute;
+        z-index: 5;
+        color: white;
+        top: 10px;
+        right: 20px;
+        font-size: 42px;
+    }
+    &__burger-menu__nav {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: white;
+        font-size: 48px;
+        text-align: center;
+    }
+    &__burger-menu__item {
+        margin-top: 27px;
+        padding-bottom: 7px;
+        border-bottom: 4px solid white;
     }
 }
 
@@ -584,6 +631,10 @@
 
 @media screen and (min-width: 641px) and (max-width: 950px) {
     .header {
+        &__burger-menu__button-open {
+            display: none;
+          
+        }
         &__logo {
             margin-right: 0;
         }
@@ -618,18 +669,26 @@
         &__signin-signup-block {
             display: none;
         }
-        &__burger-menu {
+        &__burger-menu__button-open {
             display: block;
-            margin-left: auto;
-            align-self: center;
-            padding: 0 10px;
-            & div {
-                margin: 5px 0;
-                height: 2px;
-                width: 27px;
-                background:#F53838;
-            }
+          
         }
-        
+    }
+}
+
+@media screen and (max-width: 340px) {
+    .header {
+        &__nav,
+        &__signin-signup-block {
+            display: none;
+        }
+        &__burger-menu__button-open {
+            display: block;
+          
+        }
+        &__burger-menu__nav, 
+        &__burger-menu__button-close {
+            font-size: 32px;
+        } 
     }
 }

@@ -52,3 +52,15 @@ function setHoverToCardPrice() {
   });
  });
 }
+
+const burgerMenuOpenButton = document.querySelector('.header__burger-menu__button-open');
+burgerMenuOpenButton.addEventListener('click', () => {
+ burgerMenuOpenButton.style.display = 'none';
+ const burgerMenu = document.querySelector('.header__burger-menu');
+ const burgerMenuCloseButton = document.querySelector('.header__burger-menu__button-close');
+ burgerMenu.style.display = 'block';
+ burgerMenuCloseButton.addEventListener('click', () => {
+  burgerMenu.style.display = 'none';
+  burgerMenuOpenButton.style.display = 'block';
+ });
+});
