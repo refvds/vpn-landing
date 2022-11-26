@@ -53,8 +53,12 @@
             color: white;
         }
     }
-    &__burger-menu__button-open {
+    &__burger-menu__button-open, 
+    &__burger-menu__button-open--hidden{
         display: none;
+    }
+    &__burger-menu__button-open--active {
+        display: block;
     }
     &__burger-menu__button-open {
         margin-left: auto;
@@ -68,8 +72,14 @@
             background:#F53838;
         }
     }
-    &__burger-menu{ 
+    &__burger-menu { 
         display: none;
+    }
+    &__burger-menu--hidden { 
+        display: none;
+    }
+    &__burger-menu--active{
+        display: block;
     }
     &__burger-menu{
         position: absolute;
@@ -633,7 +643,6 @@
     .header {
         &__burger-menu__button-open {
             display: none;
-          
         }
         &__logo {
             margin-right: 0;
@@ -648,6 +657,7 @@
             }
         }
         &__signin-signup-block {
+            display: block;
             align-self: center;
         }
         &__button {
@@ -662,6 +672,7 @@
     }
 
 }
+
 
 @media screen and  (max-width: 640px)   {
     .header {

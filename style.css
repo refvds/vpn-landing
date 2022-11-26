@@ -442,8 +442,11 @@ ul {
   background-color: #F53838;
   color: white;
 }
-.header__burger-menu__button-open {
+.header__burger-menu__button-open, .header__burger-menu__button-open--hidden {
   display: none;
+}
+.header__burger-menu__button-open--active {
+  display: block;
 }
 .header__burger-menu__button-open {
   margin-left: auto;
@@ -459,6 +462,12 @@ ul {
 }
 .header__burger-menu {
   display: none;
+}
+.header__burger-menu--hidden {
+  display: none;
+}
+.header__burger-menu--active {
+  display: block;
 }
 .header__burger-menu {
   position: absolute;
@@ -1019,6 +1028,7 @@ ul {
     margin-right: 12px;
   }
   .header__signin-signup-block {
+    display: block;
     align-self: center;
   }
   .header__button {
