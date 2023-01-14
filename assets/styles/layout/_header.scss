@@ -24,8 +24,7 @@
     }
     &__list-link {
         color: #4F5665;
-    }
-    
+    }   
     &__signin-btn {
         font-weight: 500;
         margin-right: 27px;
@@ -56,7 +55,6 @@
 }
 
 @media (max-width: 640px) {
-   
     .header {
         &__nav {
             position: fixed;
