@@ -6,55 +6,9 @@
 
 @import "./layout/header";
 @import "./layout/about";
+@import "./layout/features";
 
 
-.features {
-    padding-top: 130px;
-    padding-bottom: 109px;
-    &__container {
-        display: flex;
-        justify-content: space-between;
-    }
-    &__img {
-        margin-left: 34px;
-    }
-    &__info-block {
-        width: 428px;
-        padding-top: 55px;
-    }
-    &__title {
-        font-weight: 500;
-        font-size: 35px;
-        line-height: 50px;
-        color: #0B132A;
-        margin: 0;
-    }
-    &__text {
-        margin: 0;
-        padding-top: 20px;
-        line-height: 30px;
-        color: #4F5665;
-    }
-    &__list {
-        margin-top: 21px;
-        margin-left: -3px;
-    }
-    &__list-item {
-        position: relative;
-        font-size: 14px;
-        line-height: 30px;
-        color: #4F5665;
-        &::before {
-            position: absolute;
-            content: url('assets/icons/check.svg');
-            top: 3px;
-            left: -35px;
-        }
-        &:not(:last-child) {
-            margin-bottom: 15px;   
-        }
-    }
-}
 
 .price {
     padding-top: 81px;

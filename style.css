@@ -763,6 +763,9 @@ h1, h2, h3, h4, h5, h6, p {
 .features__img {
   margin-left: 34px;
 }
+.features__img img {
+  width: 100%;
+}
 .features__info-block {
   width: 428px;
   padding-top: 55px;
@@ -782,7 +785,7 @@ h1, h2, h3, h4, h5, h6, p {
 }
 .features__list {
   margin-top: 21px;
-  margin-left: -3px;
+  margin-left: 29px;
 }
 .features__list-item {
   position: relative;
@@ -794,12 +797,46 @@ h1, h2, h3, h4, h5, h6, p {
   position: absolute;
   content: url("assets/icons/check.svg");
   top: 3px;
-  left: -35px;
+  left: -32px;
 }
 .features__list-item:not(:last-child) {
   margin-bottom: 15px;
 }
 
+@media (max-width: 640px) {
+  .features {
+    padding-top: 20px;
+  }
+  .features__container {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  .features__img {
+    transform: scale(0.8);
+  }
+  .features__info-block {
+    padding-top: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .features__title {
+    text-align: center;
+    font-weight: 400;
+    font-size: 40px;
+  }
+  .features__text {
+    text-align: center;
+  }
+  .features__list {
+    margin-top: 36px;
+    margin-left: 50px;
+  }
+  .features__list-item {
+    font-size: 17px;
+    line-height: 65px;
+  }
+}
 .price {
   padding-top: 81px;
   background: linear-gradient(180deg, #F8F8F8 -45.04%, rgba(248, 248, 248, 0) 88.56%);
