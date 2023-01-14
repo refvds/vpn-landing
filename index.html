@@ -3,57 +3,43 @@
 
 <head>
     <meta charset="UTF-8">
+
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Document</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/tiny-slider.css">
     <link rel="stylesheet" href="style.css">
-
 </head>
 
 <body>
     <div class="wrapper">
-        <header class="header">
+        <header class="header" id="header">
             <div class="header__container">
-                <div class="header__logo-block">
-                    <a class="header__logo" href="">
-                        <img src="assets/icons/fire-icon.svg" alt="fire icon">
-                    </a>
-                    <a class="header__label-name" href="">Lasles<b>VPN</b></a>
-                </div>
-                <nav class="header__nav">
+                <a class="logo header__logo" href="#">
+                    <img class="logo__img" src="assets/icons/fire-icon.svg" alt="fire icon">
+                    <span class="logo__text" href="">Lasles<b>VPN</b></span>
+                </a>
+                <nav class="header__nav" id="nav">
                     <ul class="header__list">
-                        <li class="header__list-item"><a class="header__item-link" href="">About</a></li>
-                        <li class="header__list-item"><a class="header__item-link" href="">Features</a></li>
-                        <li class="header__list-item"><a class="header__item-link" href="">Pricing</a></li>
-                        <li class="header__list-item"><a class="header__item-link" href="">Testimonials</a></li>
-                        <li class="header__list-item"><a class="header__item-link" href="">Help</a></li>
+                        <li class="header__list-item"><a class="header__list-link" href="#">About</a></li>
+                        <li class="header__list-item"><a class="header__list-link" href="#">Features</a></li>
+                        <li class="header__list-item"><a class="header__list-link" href="#">Pricing</a></li>
+                        <li class="header__list-item"><a class="header__list-link" href="#">Testimonials</a></li>
+                        <li class="header__list-item"><a class="header__list-link" href="#">Help</a></li>
+                        <li class="header__list-item"><a class="header__list-link" href="#">Sign in</a></li>
+                        <li class="header__list-item"><a class="header__list-link" href="#">Sign up</a></li>
                     </ul>
                 </nav>
-                <div class="header__signin-signup-block">
-                    <a class="button header__button">Sign In</a>
-                    <a class="button button--outlined button--rounded header__button">Sign Up</a>
-                </div>
-                <div class="header__burger-menu__button-open">
+                <a class="burger-menu-open-btn" href="#nav">
                     <div></div>
                     <div></div>
                     <div></div>
-                </div>
-                <div class="header__burger-menu">
-                    <div class="header__burger-menu__button-close">&#x2715;</div>
-                    <nav class="header__burger-menu__nav">
-                        <ul class="header__burger-menu__list">
-                            <li class="header__burger-menu__item">About</li>
-                            <li class="header__burger-menu__item">Features</li>
-                            <li class="header__burger-menu__item">Pricing</li>
-                            <li class="header__burger-menu__item">Testimonials</li>
-                            <li class="header__burger-menu__item">Help</li>
-                            <li class="header__burger-menu__item">Sign In</li>
-                            <li class="header__burger-menu__item">Sign Up</li>
-                        </ul>
-                    </nav>
+                </a>
+                <a class="burger-menu-close-btn" href="#header">&#x2715;</a>
+                <div class="header__btns-block">
+                    <a class="button header__signin-btn" href="#">Sign In</a>
+                    <a class="button button--outlined button--rounded header__signup-btn" href="#">Sign Up</a>
                 </div>
             </div>
         </header>
@@ -70,7 +56,7 @@
                                 Started</a>
                         </div>
                         <div class="about__img">
-                            <img src="./assets/images/about-img.svg" alt="">
+                            <img src="./assets/images/about-img.png" alt="">
                         </div>
                     </div>
                     <div class="about__numbers-block">

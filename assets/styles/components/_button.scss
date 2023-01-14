@@ -1,0 +1,23 @@
+.button {
+    text-decoration: none;
+    display: inline-block;
+    color: #0B132A;
+    &--outlined {
+        border: 1px solid #F53855;
+        color: #F53855;
+    }
+    &--rounded {
+        border-radius: 50px;
+    }
+    &--contained {
+        background-color: #F53838;
+        color: white;
+        transition: .5s ease-in-out;
+    }
+    &--brick {
+        border-radius: 10px;
+    }
+    &--shadow {
+        box-shadow: #F53838 0px 25px 20px -14px;
+    }
+}

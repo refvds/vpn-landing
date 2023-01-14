@@ -52,33 +52,3 @@ function setHoverToCardPrice() {
   });
  });
 }
-
-const burgerMenuOpenButton = document.querySelector('.header__burger-menu__button-open');
-const signInsignUpBlock = document.querySelector('.header__signin-signup-block');
-const burgerMenu = document.querySelector('.header__burger-menu');
-
-burgerMenuOpenButton.addEventListener('click', () => {
- burgerMenuOpenButton.classList.add('header__burger-menu__button-open--hidden');
- burgerMenuOpenButton.classList.remove('header__burger-menu__button-open--active');
-
- const burgerMenuCloseButton = document.querySelector('.header__burger-menu__button-close');
- burgerMenu.classList.add('header__burger-menu--active');
- burgerMenuCloseButton.addEventListener('click', () => {
-  if (window.screen.width >= 641) {
-   burgerMenuOpenButton.classList.add('header__burger-menu__button-open--hidden');
-   burgerMenuOpenButton.classList.remove('header__burger-menu__button-open--active');
-  } else {
-   burgerMenuOpenButton.classList.remove('header__burger-menu__button-open--hidden');
-   burgerMenuOpenButton.classList.add('header__burger-menu__button-open--active');
-  }
-  burgerMenu.classList.add('header__burger-menu--hidden');
-  burgerMenu.classList.remove('header__burger-menu--active');
- });
-});
-
-window.addEventListener('resize', () => {
- if (window.screen.width > 640) {
-  burgerMenu.classList.remove('header__burger-menu--active');
-  burgerMenu.classList.add('header__burger-menu--hidden');
- } 
-});
