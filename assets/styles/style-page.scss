@@ -3,151 +3,17 @@
 @import "./components/logo";
 @import "./components/button";
 @import "./components/burger-menu";
+@import "./components/price-card";
 
 @import "./layout/header";
 @import "./layout/about";
 @import "./layout/features";
+@import "./layout/price";
+@import "./layout/global-network";
 
 
 
-.price {
-    padding-top: 81px;
-    background: linear-gradient(180deg, #F8F8F8 -45.04%, rgba(248, 248, 248, 0) 88.56%);
-    &__container {
-        max-width: 1090px;
-        margin: 0 auto;
-    }
-    &__title {
-        text-align: center;
-        font-size: 35px;
-        line-height: 50px;
-        color: #0B132A;
-        margin: 0;
-    }
-    &__text {
-        margin: 0 auto;
-        text-align: center;
-        max-width: 555px;
-        line-height: 30px;
-        color: #4F5665;
-        padding-top: 19px;
-    }
-    &__cards {
-        margin-top: 60px;
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        gap: 50px;
-    }
-    &__card {
-        padding: 76px 27px 50px 28px;
-        height: 628px;
-        border: 2px solid #DDDDDD;
-        border-radius: 10px;
-        display: flex;
-        flex-direction: column;
-        &--active {
-            border: 2px solid #F53838;
-            transition: .5s ease-in-out;
-        }
-    }
-    &__card-img {
-        margin-left: 63px;
-    }
-    &__card-title {
-        margin: 0;
-        margin-top: 26px;
-        font-weight: 500;
-        font-size: 18px;
-        line-height: 30px;
-        text-align: center;
-        color: #0B132A;
-    }
-    &__card-list {
-        margin-top: 32px;
-        margin-left: 26px;
-        list-style-image: url('assets/icons/check1.svg');
-    }
-    &__card-list-item {
-        font-size: 14px;
-        line-height: 30px;
-        color: #4F5665;
-        &:not(:last-child) {
-            margin-bottom: 10px;
-        }
-    }
-    &__button {
-        display: inline-block;
-        margin-top: auto;
-    }
-    &__card-price-block {
-        margin: 0 auto;
-        margin-top: auto;
-    }
-    &__card-price {
-        font-size: 25px;
-        line-height: 30px;
-        text-align: center;
-        color: #0B132A;
-        margin: 0;
-        &--month {
-            font-weight: 400;
-            font-size: 25px;
-            line-height: 30px;
-            color: #4F5665;
-        }
-    }
-    &__card-button {
-        margin-top: 14px;
-        padding: 13px 63px;
-    }
-    &__card-list-item span {
-        position: relative;
-        left: 19px;
-    }
-}
 
-.global-network {
-    padding-top: 150px;
-    &__container {
-        // max-width: 1140px;
-        margin: 0 auto;
-    }
-    &__title {
-        margin: 0 auto;
-        max-width: 383px;
-        font-weight: 500;
-        font-size: 35px;
-        line-height: 50px;
-        text-align: center;
-        color: #0B132A;
-    }
-    &__text { 
-        margin: 0 auto;
-        margin-top: 20px;
-        line-height: 30px;
-        text-align: center;
-        color: #4F5665;
-        max-width: 555px;
-    }
-    &__map {
-        margin-left: 41px;
-        margin-top: 159px;
-    }
-    &__brands {
-        margin-top: 30px;
-        display: flex;
-        align-items: center;
-    }
-    &__brand {
-        margin-right: 10px;
-    }
-    &__brand:nth-child(1) {
-        margin-right: 57px;
-    }
-    &__brand:nth-child(4) {
-        margin-right: 60px;
-    }
-}
 
 .testimonials {
     margin-top: 41px;
