@@ -1,0 +1,95 @@
+.price-card {
+    padding: 76px 27px 50px 28px;
+    height: 628px;
+    border: 2px solid #DDDDDD;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+    transition: .4s ease-in-out;
+    &:hover{
+        border: 2px solid #F53838;
+        transition: .4s ease-in-out;
+    }
+    &:hover > &__price-block &__button {
+        background-color: #F53838;
+        color: white;
+        box-shadow: #F53838 0px 25px 20px -14px;
+        transition: all .4s linear;
+        border-radius: 50px;
+    }
+    &__title {
+        margin-top: 26px;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 30px;
+        text-align: center;
+        color: #0B132A;
+    }
+    &__list {
+        margin-top: 32px;
+        list-style-image: url('assets/icons/check1.svg');
+    }
+    &__list-item {
+        font-size: 14px;
+        line-height: 30px;
+        color: #4F5665;
+        &:not(:last-child) {
+            margin-bottom: 10px;
+        }
+        & span {
+            position: relative;
+            left: 19px
+        }
+    }
+    &__button {
+        display: inline-block;
+        margin-top: auto;
+    }
+    &__price-block {
+        margin: 0 auto;
+        margin-top: auto;
+    }
+    &__price {
+        font-size: 25px;
+        line-height: 30px;
+        text-align: center;
+        color: #0B132A;
+        &--month {
+            font-weight: 400;
+            font-size: 25px;
+            line-height: 30px;
+            color: #4F5665;
+        }
+    }
+    &__button {
+        margin-top: 14px;
+        padding: 13px 63px;
+        transition: .4s ease-in-out;
+
+    }
+}
+
+@media (max-width: 800px) {
+    .price-card {
+        padding: 36px 0 30px 0;
+    }
+    .price-card__list-item {
+        font-size: 13px;
+    }
+}
+
+@media (max-width: 640px) {
+    .price-card {
+       justify-self: center;
+       width: 350px;
+       padding: 20px 10px;
+    }
+}
+
+@media (max-width: 400px) {
+    .price-card {
+        width: 260px;
+    }
+}
