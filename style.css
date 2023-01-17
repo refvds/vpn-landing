@@ -515,6 +515,10 @@ h1, h2, h3, h4, h5, h6, p {
   gap: 12px;
 }
 
+.tns-outer button {
+  display: none;
+}
+
 .tns-nav button {
   display: inline-block;
   width: 15px;
@@ -1245,10 +1249,12 @@ h1, h2, h3, h4, h5, h6, p {
 }
 
 .footer {
-  padding-top: 448px;
+  padding-top: 384px;
 }
-.footer__container {
+.footer__wrapper {
+  max-width: 1160px;
   margin: 0 auto;
+  padding: 0 10px;
   display: flex;
 }
 .footer__logo-block {
@@ -1304,25 +1310,73 @@ h1, h2, h3, h4, h5, h6, p {
   text-align: center;
   color: #AFB5C0;
 }
-.footer__list1, .footer__list2, .footer__list3 {
-  line-height: 30px;
+.footer__product-list, .footer__engage-list, .footer__earnmonney-list {
+  line-height: 37px;
   margin-left: 74px;
 }
-.footer__list1 a, .footer__list2 a, .footer__list3 a {
+.footer__product-list a, .footer__engage-list a, .footer__earnmonney-list a {
   display: inline-block;
   color: #4F5665;
 }
-.footer__list1 li:first-child, .footer__list2 li:first-child, .footer__list3 li:first-child {
+.footer__product-list li:first-child, .footer__engage-list li:first-child, .footer__earnmonney-list li:first-child {
   margin-bottom: 20px;
 }
-.footer__list1 li:first-child a, .footer__list2 li:first-child a, .footer__list3 li:first-child a {
+.footer__product-list li:first-child a, .footer__engage-list li:first-child a, .footer__earnmonney-list li:first-child a {
   font-weight: 500;
   font-size: 18px;
   line-height: 30px;
   color: #0B132A;
 }
-.footer__list1 {
-  margin-left: 190px;
+.footer__product-list {
+  margin-left: 231px;
+}
+.footer__engage-list {
+  margin-left: 124px;
+}
+.footer__earnmonney-list {
+  margin-left: auto;
+}
+
+@media (max-width: 1100px) {
+  .footer__product-list {
+    margin-left: 100px;
+  }
+  .footer__engage-list {
+    margin-left: 47px;
+  }
+  .footer__earnmoney-list {
+    margin-left: 18px;
+  }
+}
+@media (max-width: 800px) {
+  .footer {
+    padding-top: 150px;
+  }
+  .footer__wrapper {
+    flex-wrap: wrap-reverse;
+    justify-content: center;
+    gap: 20px;
+  }
+  .footer__info-block {
+    width: 100%;
+  }
+  .footer__product-list, .footer__engage-list, .footer__earnmonney-list {
+    margin-left: 0;
+  }
+}
+@media (max-width: 400px) {
+  .footer__wrapper {
+    gap: 20px;
+  }
+  .footer__list-link {
+    font-size: 14px !important;
+  }
+  .footer__column-title {
+    font-size: 16px !important;
+  }
+  .footer__info-block {
+    margin-top: 30px;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
