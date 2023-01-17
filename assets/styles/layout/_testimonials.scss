@@ -1,0 +1,82 @@
+.testimonials {
+    margin-top: 41px;
+    position: relative;
+    &__wrapper {
+        max-width: 1300px;
+        margin: 0 auto;
+    }
+    &__title {
+        margin: 0 auto;
+        font-weight: 500;
+        font-size: 35px;
+        line-height: 50px;
+        text-align: center;
+        color: #0B132A;
+        max-width: 448px;
+    }
+    &__text {
+        margin: 0 auto;
+        padding-top: 20px;
+        line-height: 30px;
+        text-align: center;
+        color: #4F5665;
+        max-width: 555px;
+    }
+    &__cards {
+        margin-top: 62px;
+        position: relative;
+    }
+    
+    &__card-dot {
+        display: inline-block;
+        width: 15px;
+        height: 15px;
+        background: #DDE0E4;
+        border-radius: 50%;
+        &:not(:last-child) {
+            margin-right: 12px;
+        }
+        &--active {
+            width: 45px;
+            background: #F53838;
+            border-radius: 50px;
+        }
+    }
+    &__card-bottom {
+        margin-top: 62px;
+        padding-left: 53px;
+        display: flex;
+        align-items: center;
+    }
+    &__cards-buttons {
+        margin-left: 865px;
+    } 
+    &__button-left,
+    &__button-right {
+        background-color: white;
+        font-size: 31px;
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+        border: 2px solid #F53838;
+        cursor: pointer;
+        &:hover {
+            & path {
+                fill: white;
+            }
+            background: #F53838;
+        }
+    }
+    &__button-left {
+        margin-right: 20px;
+        position: relative;
+       
+    }
+    &__button-right {
+        margin-right: 20px;
+        position: relative;
+        & svg {
+            transform: rotateY(180deg);
+        }
+    }
+}
