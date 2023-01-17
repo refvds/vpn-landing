@@ -1,9 +1,7 @@
-const priceCards = document.querySelectorAll('.price__card');
 const header = document.querySelector('.header');
 const numberBlock = document.querySelector('.about__numbers-block');
 const numbers = document.querySelectorAll('.about__number-digits');
 
-setHoverToCardPrice();
 isInViewport();
 
 function isInViewport() {

@@ -4,155 +4,20 @@
 @import "./components/button";
 @import "./components/burger-menu";
 @import "./components/price-card";
+@import "./components/slider";
+@import "./components/testimonial-card";
 
 @import "./layout/header";
 @import "./layout/about";
 @import "./layout/features";
 @import "./layout/price";
 @import "./layout/global-network";
+@import "./layout/testimonials";
 
 
 
 
 
-.testimonials {
-    margin-top: 41px;
-    position: relative;
-    &__container {
-        max-width: 1354px;
-        margin: 0 auto;
-    }
-    &__title {
-        margin: 0;
-        margin-left: 487px;
-        font-weight: 500;
-        font-size: 35px;
-        line-height: 50px;
-        text-align: center;
-        color: #0B132A;
-        max-width: 448px;
-    }
-    &__text {
-        margin: 0;
-        padding-top: 20px;
-        line-height: 30px;
-        text-align: center;
-        color: #4F5665;
-        max-width: 555px;
-        margin-left: 435px;
-    }
-    &__cards {
-        margin: 0 auto;
-        margin-top: 61px;
-        max-width: 1300px;
-        position: relative;
-    }
-    &__cards-container  {
-        display: flex;
-        gap: 39px;
-        justify-content: space-between;
-        padding-left: 53px;
-    }
-    &__card {
-        width: 400px;
-        height: 231px;
-        padding: 30px;
-        border: 2px solid #DDDDDD;
-        border-radius: 10px;
-        user-select: none;
-        &:hover {
-            border: 2px solid #F53838;
-            transition: all .4s ease-in-out;
-        }
-    }
-    &__card-top {
-        display: flex;
-        align-items: center;
-        gap: 20px;
-    }
-    &__card-score-block {
-        margin-left: auto;
-        display: flex;
-        align-items: center;
-        gap: 10px;
-    }
-    &__card-score {
-        line-height: 30px;
-        color: #0B132A;
-        
-    }
-    &__card-user-name {
-        margin: 0;
-        font-weight: 500;
-        font-size: 18px;
-        color: #0B132A;
-        text-align: center;
-    }
-    &__card-user-location {
-        font-weight: 400;
-        font-size: 14px;
-        line-height: 30px;
-        text-align: center;
-        color: #4F5665;
-    }
-    &__card-testimonial {
-        line-height: 30px;
-        color: #0B132A;
-        margin: 0;
-    }
-    &__card-dot {
-        display: inline-block;
-        width: 15px;
-        height: 15px;
-        background: #DDE0E4;
-        border-radius: 50%;
-        &:not(:last-child) {
-            margin-right: 12px;
-        }
-        &--active {
-            width: 45px;
-            background: #F53838;
-            border-radius: 50px;
-        }
-    }
-    &__card-bottom {
-        margin-top: 62px;
-        padding-left: 53px;
-        display: flex;
-        align-items: center;
-    }
-    &__cards-buttons {
-        margin-left: 865px;
-    } 
-    &__button-left,
-    &__button-right {
-        background-color: white;
-        font-size: 31px;
-        width: 60px;
-        height: 60px;
-        border-radius: 50%;
-        border: 2px solid #F53838;
-        cursor: pointer;
-        &:hover {
-            & path {
-                fill: white;
-            }
-            background: #F53838;
-        }
-    }
-    &__button-left {
-        margin-right: 20px;
-        position: relative;
-       
-    }
-    &__button-right {
-        margin-right: 20px;
-        position: relative;
-        & svg {
-            transform: rotateY(180deg);
-        }
-    }
-}
 
 .footer {
     padding-top: 448px;

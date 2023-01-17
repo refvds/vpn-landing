@@ -338,41 +338,6 @@ h1, h2, h3, h4, h5, h6, p {
   margin: 0 auto;
 }
 
-.slider {
-  display: flex;
-  gap: 50px;
-  cursor: pointer;
-}
-
-.tns-nav {
-  margin-top: 83px;
-  display: flex;
-  gap: 12px;
-}
-
-.tns-nav button {
-  display: inline-block;
-  width: 15px;
-  height: 15px;
-  background: #DDE0E4;
-  border: none;
-  border-radius: 50%;
-  transition: all 0.4s ease-out;
-}
-
-.tns-nav .tns-nav-active {
-  width: 45px;
-  background: #F53838;
-  border-radius: 50px;
-  transition: width 0.4s ease-out;
-}
-
-.slider-controls {
-  position: absolute;
-  right: 130px;
-  bottom: -22px;
-}
-
 [data-action=stop] {
   display: none;
 }
@@ -535,6 +500,119 @@ h1, h2, h3, h4, h5, h6, p {
 @media (max-width: 400px) {
   .price-card {
     width: 260px;
+  }
+}
+.slider {
+  display: flex;
+  gap: 50px;
+  cursor: pointer;
+}
+
+.tns-nav {
+  margin-top: 83px;
+  display: flex;
+  margin-left: 10px;
+  gap: 12px;
+}
+
+.tns-nav button {
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  background: #DDE0E4;
+  border: none;
+  border-radius: 50%;
+  transition: all 0.4s ease-out;
+}
+
+.tns-nav .tns-nav-active {
+  width: 45px;
+  background: #F53838;
+  border-radius: 50px;
+  transition: width 0.4s ease-out;
+}
+
+.slider-controls {
+  position: absolute;
+  right: 0;
+  bottom: -22px;
+}
+
+@media (max-width: 1100px) {
+  .slider {
+    gap: 10px;
+  }
+}
+@media (max-width: 640px) {
+  .slider-controls {
+    display: none;
+  }
+  .tns-nav {
+    margin-top: 42px;
+    justify-content: center;
+    gap: 7px;
+  }
+}
+.testimonial-card {
+  width: 400px;
+  height: 231px;
+  padding: 20px;
+  border: 2px solid #DDDDDD;
+  border-radius: 10px;
+  user-select: none;
+}
+.testimonial-card:hover {
+  border: 2px solid #F53838;
+  transition: all 0.4s ease-in-out;
+}
+.testimonial-card__top {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.testimonial-card__score-block {
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.testimonial-card__score {
+  line-height: 30px;
+  color: #0B132A;
+}
+.testimonial-card__user-name {
+  margin: 0;
+  font-weight: 500;
+  font-size: 16px;
+  color: #0B132A;
+  text-align: center;
+}
+.testimonial-card__user-location {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 30px;
+  text-align: center;
+  color: #4F5665;
+}
+.testimonial-card__testimonial {
+  line-height: 30px;
+  color: #0B132A;
+  margin: 0;
+}
+
+@media (max-width: 1160px) {
+  .testimonial-card {
+    padding: 10px;
+  }
+  .testimonial-card__top {
+    gap: 1px;
+  }
+  .testimonial-card__user-name {
+    font-size: 14px;
+  }
+  .testimonial-card__score-block {
+    gap: 4px;
+    font-size: 13px;
   }
 }
 .header__container {
@@ -1036,13 +1114,12 @@ h1, h2, h3, h4, h5, h6, p {
   margin-top: 41px;
   position: relative;
 }
-.testimonials__container {
-  max-width: 1354px;
+.testimonials__wrapper {
+  max-width: 1300px;
   margin: 0 auto;
 }
 .testimonials__title {
-  margin: 0;
-  margin-left: 487px;
+  margin: 0 auto;
   font-weight: 500;
   font-size: 35px;
   line-height: 50px;
@@ -1051,71 +1128,16 @@ h1, h2, h3, h4, h5, h6, p {
   max-width: 448px;
 }
 .testimonials__text {
-  margin: 0;
+  margin: 0 auto;
   padding-top: 20px;
   line-height: 30px;
   text-align: center;
   color: #4F5665;
   max-width: 555px;
-  margin-left: 435px;
 }
 .testimonials__cards {
-  margin: 0 auto;
-  margin-top: 61px;
-  max-width: 1300px;
+  margin-top: 62px;
   position: relative;
-}
-.testimonials__cards-container {
-  display: flex;
-  gap: 39px;
-  justify-content: space-between;
-  padding-left: 53px;
-}
-.testimonials__card {
-  width: 400px;
-  height: 231px;
-  padding: 30px;
-  border: 2px solid #DDDDDD;
-  border-radius: 10px;
-  user-select: none;
-}
-.testimonials__card:hover {
-  border: 2px solid #F53838;
-  transition: all 0.4s ease-in-out;
-}
-.testimonials__card-top {
-  display: flex;
-  align-items: center;
-  gap: 20px;
-}
-.testimonials__card-score-block {
-  margin-left: auto;
-  display: flex;
-  align-items: center;
-  gap: 10px;
-}
-.testimonials__card-score {
-  line-height: 30px;
-  color: #0B132A;
-}
-.testimonials__card-user-name {
-  margin: 0;
-  font-weight: 500;
-  font-size: 18px;
-  color: #0B132A;
-  text-align: center;
-}
-.testimonials__card-user-location {
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 30px;
-  text-align: center;
-  color: #4F5665;
-}
-.testimonials__card-testimonial {
-  line-height: 30px;
-  color: #0B132A;
-  margin: 0;
 }
 .testimonials__card-dot {
   display: inline-block;

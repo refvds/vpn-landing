@@ -33,40 +33,7 @@ h1,h2,h3,h4,h5,h6,p {
 }
 
 
-.slider {
-    display: flex;
-    gap: 50px;
-    cursor: pointer;
 
-}
-.tns-nav {
-    margin-top: 83px;
-    display: flex;
-    gap: 12px;
-}
-
-.tns-nav button {
-    display: inline-block;
-    width: 15px;
-    height: 15px;
-    background: #DDE0E4;
-    border: none;
-    border-radius: 50%;
-    transition: all .4s ease-out;
-}
-
-.tns-nav .tns-nav-active {
-    width: 45px;
-    background: #F53838;
-    border-radius: 50px;
-    transition: width .4s ease-out;
-}
-
-.slider-controls {
-    position: absolute;
-    right: 130px;
-    bottom: -22px;
-}
 
 [data-action='stop'] {
     display: none;
